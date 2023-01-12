@@ -1,0 +1,43 @@
+ng-sidebar-container {
+    height: 100vh;
+}
+
+::ng-deep .ng-sidebar {
+    background-color: #f4f4f4;
+    width: 200px;
+    padding: 2em 3em;
+    box-shadow: 0 0 2.5em rgb(158, 153, 153);
+}
+
+.menu {
+    margin-top: 2em;
+    display: block;
+    
+
+}
+
+.menu li {
+    margin-bottom: 15px;
+}
+
+.menu li a {
+    display: block;
+    width: 100%;
+}
+
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+  }
+
+.menus{
+    color: black;
+    font-size: 18px;
+}
+
+.menus:hover{
+    color: rgb(2, 113, 187);
+}
+  

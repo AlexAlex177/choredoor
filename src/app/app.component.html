@@ -1,0 +1,28 @@
+<body>
+
+<ng-sidebar-container>
+  <ng-sidebar [opened]="opened">
+    <img
+    src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.webp"
+    height="30"
+    alt=""
+    loading="lazy"
+    style="margin-top: -1px;" />
+    <i class="bi bi-x-lg topright" (click)="toggleSidebar()"></i>
+    <ul class="menu">
+      <li><a routerLink="/home" (click)="toggleSidebar()" class="menus">Home</a></li>
+      <li><a routerLink="/dashboard" (click)="toggleSidebar()" class="menus">Dashboard</a></li>
+      <li><a routerLink="/posts" (click)="toggleSidebar()" class="menus">Posts</a></li>
+      <li><a routerLink="/contact" (click)="toggleSidebar()" class="menus">Contact</a></li>
+    </ul>
+    
+  </ng-sidebar>
+  <div ng-sidebar-content>
+    
+      <i class="bi bi-list list" (click)="toggleSidebar()" style="margin: 20px;font-size: 25px;"></i>
+      <router-outlet></router-outlet>
+  </div>
+ 
+</ng-sidebar-container>
+
+</body>

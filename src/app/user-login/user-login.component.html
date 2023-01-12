@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="main">
+
+        <div class="login-form">
+            <h1>LogIn</h1>
+            <form #checkform="ngForm">
+                <input type="text" name="userNmae" class="input-box" placeholder="User name" [(ngModel)]="loginObj.userName" required><br>
+                <input type="password" name="psswdord" class="input-box" placeholder="Password" [(ngModel)]="loginObj.password" required><br>
+                <a href="home"><button (click)="onLogin()" [disabled]="!checkform.valid" class="loginbtn">Login</button></a>
+                <p><span><input type="checkbox"></span> I agree to the terms & conditions</p>
+                <hr>
+                <p class="or">OR</p>
+                <p>Do you have an account ? <a href="register">Signup</a></p>
+            </form>
+        </div>
+       
+    </div>
+</div>

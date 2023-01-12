@@ -1,0 +1,20 @@
+<div class="contact-form">
+    <h1>Contact Form</h1>
+<form #checkForm="ngForm" (ngSubmit)="checkFunction(checkForm.value)">
+
+    <div class="form-group">
+        <input type="text" #name="ngModel" [class.is-invalid]="name.invalid && name.touched" class="form-control input-box" name="name" [(ngModel)]="userModel.name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name" required>
+        <small class="text-danger" [class.d-none]="name.valid || name.untouched">Name is required</small>
+      </div>
+    <div class="form-group">
+        <input type="email" #email="ngModel" [class.is-invalid]="email.invalid && email.touched" class="form-control input-box" name="email"  [(ngModel)]="userModel.email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+        <small class="text-danger" [class.d-none]="email.valid || email.untouched">Email is required</small>
+    </div>
+    <div class="form-group">
+      <input type="tel" #contact="ngModel" [class.is-invalid]="contact.invalid && contact.touched" class="form-control input-box" name="contact"  [(ngModel)]="userModel.contact" id="exampleInputPassword1" placeholder="Enter contact" required> 
+        <small class="text-danger" [class.d-none]="contact.valid || contact.untouched">Contact is required</small>
+    </div>
+   
+    <button type="submit" class="btn btn-primary submitbtn" [disabled]="!checkForm.valid">Submit</button>
+  </form>
+</div>
