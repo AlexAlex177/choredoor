@@ -16,6 +16,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UserLoginComponent } from './user-login/user-login.component';
+import { FormbuilderComponent } from './formbuilder/formbuilder.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { UserLoginComponent } from './user-login/user-login.component';
 
     RegisterComponent,
     UserLoginComponent,
+    FormbuilderComponent,
    
   ],
   imports: [

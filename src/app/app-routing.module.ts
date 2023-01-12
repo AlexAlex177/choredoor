@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FormbuilderComponent } from './formbuilder/formbuilder.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PostsComponent } from './posts/posts.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path:"home",component:HomeComponent},
   {path:"register",component:RegisterComponent},
   {path:"userlogin",component:UserLoginComponent},
+  {path:"fb",component:FormbuilderComponent},
   {path:"**",component:NotFoundComponent},
 
 ];
